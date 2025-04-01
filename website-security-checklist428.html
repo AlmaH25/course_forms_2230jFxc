@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Security Checklist</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3 { color: #333; }
+        label { display: block; margin: 5px 0; }
+        input[type="checkbox"] { margin-right: 10px; }
+        input[type="text"] { width: 200px; margin-left: 20px; }
+        textarea { width: 100%; height: 120px; margin-top: 5px; }
+        .section { margin-bottom: 20px; }
+        .sub-section { margin-left: 20px; }
+        p { margin: 10px 0; }
+    </style>
+</head>
+<body>
+    <h1>Website Security Checklist</h1>
+    <h2>For Creative Entrepreneurs Using Systeme.io</h2>
+    <p>Use this comprehensive checklist to implement and maintain security for your creative business website.</p>
+
+    <form id="securityChecklistForm">
+        <div class="section">
+            <h3>ACCOUNT SECURITY</h3>
+            <label><input type="checkbox" name="strongPassword"> Created strong password:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="passwordLength"> At least 12 characters long</label>
+                <label><input type="checkbox" name="passwordCase"> Mix of uppercase and lowercase letters</label>
+                <label><input type="checkbox" name="passwordNumbers"> Includes numbers</label>
+                <label><input type="checkbox" name="passwordSpecial"> Includes special characters (!@#$%^&*)</label>
+                <label><input type="checkbox" name="passwordNotPersonal"> Not based on personal information</label>
+                <label><input type="checkbox" name="passwordUnique"> Unique to Systeme.io (not used elsewhere)</label>
+            </div>
+
+            <label><input type="checkbox" name="twoFactor"> Enabled two-factor authentication (if available):</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="twoFactorPhone"> Set up with mobile phone</label>
+                <label><input type="checkbox" name="twoFactorBackup"> Saved backup codes in secure location</label>
+                <label><input type="checkbox" name="twoFactorTested"> Tested login process with 2FA</label>
+            </div>
+
+            <label><input type="checkbox" name="emailSecured"> Secured email account:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="emailPassword"> Strong, unique password</label>
+                <label><input type="checkbox" name="emailTwoFactor"> Two-factor authentication enabled</label>
+                <label><input type="checkbox" name="emailRecovery"> Recovery information up to date</label>
+            </div>
+
+            <label><input type="checkbox" name="loginPractices"> Implemented safe login practices:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="loginPublic"> Log out when using public computers</label>
+                <label><input type="checkbox" name="loginWifi"> Avoid logging in on public Wi-Fi</label>
+                <label><input type="checkbox" name="loginURL"> Check URL before entering credentials</label>
+                <label><input type="checkbox" name="loginDevices"> Keep devices updated and secure</label>
+            </div>
+
+            <label><input type="checkbox" name="teamAccess"> Managed team access (if applicable):</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="teamAccounts"> Created individual accounts for team members</label>
+                <label><input type="checkbox" name="teamPermissions"> Set appropriate permission levels</label>
+                <label><input type="checkbox" name="teamRemoved"> Removed access for former team members</label>
+                <label><input type="checkbox" name="teamDocumented"> Documented who has what access</label>
+            </div>
+
+            <label><input type="checkbox" name="securityDocs"> Documented security information safely:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="docsPasswordManager"> Using password manager</label>
+                <label><input type="checkbox" name="docsRecovery"> Stored recovery information securely</label>
+                <label><input type="checkbox" name="docsShared"> Shared emergency access with trusted person</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>BACKUP STRATEGY</h3>
+            <label><input type="checkbox" name="systemeBackup"> Identified what Systeme.io backs up automatically:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="backupPolicies"> Researched Systeme.io's backup policies</label>
+                <label><input type="checkbox" name="backupIncluded"> Noted what's included and what's not</label>
+                <label><input type="checkbox" name="backupRestore"> Understood how to request a restore if needed</label>
+            </div>
+
+            <label><input type="checkbox" name="manualBackup"> Implemented manual backup process:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="backupContent"> Content exports (pages, posts, products)</label>
+                <label><input type="checkbox" name="backupContacts"> Contact and customer data exports</label>
+                <label><input type="checkbox" name="backupProducts"> Digital product backups</label>
+                <label><input type="checkbox" name="backupScreenshots"> Screenshots of important settings</label>
+            </div>
+
+            <label><input type="checkbox" name="backupStorage"> Established backup storage:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="storageLocal"> Local computer storage</label>
+                <label><input type="checkbox" name="storageExternal"> External hard drive or USB</label>
+                <label><input type="checkbox" name="storageCloud"> Cloud storage (Google Drive, Dropbox, etc.)</label>
+                <label><input type="checkbox" name="storageOrganized"> Organized with clear folder structure and naming</label>
+            </div>
+
+            <label><input type="checkbox" name="backupSchedule"> Created backup schedule:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="scheduleWeekly"> Weekly quick backups</label>
+                <label><input type="checkbox" name="scheduleMonthly"> Monthly comprehensive backups</label>
+                <label><input type="checkbox" name="schedulePreChange"> Pre-change backups</label>
+                <label><input type="checkbox" name="scheduleReminders"> Added calendar reminders</label>
+            </div>
+
+            <label><input type="checkbox" name="backupTested"> Tested backup restoration:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="testFiles"> Verified exported files can be opened</label>
+                <label><input type="checkbox" name="testComplete"> Confirmed backup data is complete</label>
+                <label><input type="checkbox" name="testDocumented"> Documented restoration process</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>LEGAL COMPLIANCE</h3>
+            <label><input type="checkbox" name="legalPages"> Created essential legal pages:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="legalPrivacy"> Privacy Policy</label>
+                <label><input type="checkbox" name="legalTerms"> Terms of Service</label>
+                <label><input type="checkbox" name="legalRefund"> Refund Policy</label>
+                <label><input type="checkbox" name="legalShipping"> Shipping Policy (if applicable)</label>
+                <label><input type="checkbox" name="legalCookie"> Cookie Policy or Notice</label>
+            </div>
+
+            <label><input type="checkbox" name="legalCustomized"> Customized legal content for your business:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="legalBusinessInfo"> Added your business information</label>
+                <label><input type="checkbox" name="legalPractices"> Described your actual practices</label>
+                <label><input type="checkbox" name="legalClear"> Made language clear and understandable</label>
+                <label><input type="checkbox" name="legalUpdated"> Included last updated date</label>
+            </div>
+
+            <label><input type="checkbox" name="legalPublished"> Published legal pages on website:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="legalSeparate"> Created separate page for each document</label>
+                <label><input type="checkbox" name="legalFormatted"> Formatted for readability</label>
+                <label><input type="checkbox" name="legalNavigation"> Added to website navigation or footer</label>
+                <label><input type="checkbox" name="legalLinked"> Linked during checkout or registration</label>
+            </div>
+
+            <label><input type="checkbox" name="legalReview"> Set up review schedule:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="reviewReminder"> Calendar reminder for 6-12 month review</label>
+                <label><input type="checkbox" name="reviewProcess"> Process for updating when practices change</label>
+                <label><input type="checkbox" name="reviewHistory"> Documentation of review history</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>DIGITAL PRODUCT SECURITY (IF APPLICABLE)</h3>
+            <label><input type="checkbox" name="downloadLinks"> Secured download links:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="linksTemporary"> Temporary/expiring links enabled</label>
+                <label><input type="checkbox" name="linksLimits"> Download attempt limits set</label>
+                <label><input type="checkbox" name="linksVerified"> Verified settings in Systeme.io</label>
+            </div>
+
+            <label><input type="checkbox" name="pdfProtected"> Protected PDF files and documents:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="pdfCopyright"> Added copyright information to all pages</label>
+                <label><input type="checkbox" name="pdfBusiness"> Included business name and website</label>
+                <label><input type="checkbox" name="pdfNotice"> Added "not for redistribution" notice</label>
+                <label><input type="checkbox" name="pdfWatermark"> Considered watermarking for valuable content</label>
+            </div>
+
+            <label><input type="checkbox" name="videoSecured"> Secured video content:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="videoHosting"> Used Systeme.io's secure hosting</label>
+                <label><input type="checkbox" name="videoEmbedded"> Properly embedded videos</label>
+                <label><input type="checkbox" name="videoBranding"> Added branding and copyright notices</label>
+            </div>
+
+            <label><input type="checkbox" name="membershipSetup"> Set up membership areas correctly:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="membershipLevels"> Configured proper access levels</label>
+                <label><input type="checkbox" name="membershipLogin"> Implemented secure login requirements</label>
+                <label><input type="checkbox" name="membershipTested"> Tested access restrictions</label>
+            </div>
+
+            <label><input type="checkbox" name="termsOfUse"> Created clear terms of use:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="termsPersonal"> Stated that products are for personal use only</label>
+                <label><input type="checkbox" name="termsRestrictions"> Explained restrictions on sharing</label>
+                <label><input type="checkbox" name="termsDisplayed"> Displayed terms before purchase and in products</label>
+            </div>
+
+            <label><input type="checkbox" name="technicalProtection"> Implemented appropriate technical protection:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="protectionBalance"> Balanced security with user experience</label>
+                <label><input type="checkbox" name="protectionReasonable"> Added reasonable protections without frustrating customers</label>
+                <label><input type="checkbox" name="protectionTested"> Tested from customer perspective</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>ONGOING MAINTENANCE PLAN</h3>
+            <label><input type="checkbox" name="monthlyMaintenance"> Set up monthly maintenance (30 minutes):</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="monthlyUpdates"> Check for Systeme.io updates</label>
+                <label><input type="checkbox" name="monthlyAccess"> Review account access</label>
+                <label><input type="checkbox" name="monthlyForms"> Check website forms</label>
+                <label><input type="checkbox" name="monthlyPerformance"> Monitor website performance</label>
+                <label>Added to calendar: Date <input type="text" name="monthlyDate"></label>
+            </div>
+
+            <label><input type="checkbox" name="quarterlyReview"> Scheduled quarterly review (1-2 hours):</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="quarterlyBackups"> Comprehensive backups</label>
+                <label><input type="checkbox" name="quarterlyLegal"> Legal page updates</label>
+                <label><input type="checkbox" name="quarterlyAudit"> Security audit</label>
+                <label><input type="checkbox" name="quarterlyTesting"> Digital product security testing</label>
+                <label>Added to calendar: Dates <input type="text" name="quarterlyDates"></label>
+            </div>
+
+            <label><input type="checkbox" name="annualAudit"> Planned annual security audit (half-day):</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="auditPolicy"> Comprehensive policy review</label>
+                <label><input type="checkbox" name="auditDocs"> Security documentation update</label>
+                <label><input type="checkbox" name="auditTraining"> Team security training (if applicable)</label>
+                <label>Added to calendar: Date <input type="text" name="auditDate"></label>
+            </div>
+
+            <label><input type="checkbox" name="securityDocumentation"> Created security documentation:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="docsMeasures"> List of implemented security measures</label>
+                <label><input type="checkbox" name="docsBackup"> Backup procedures and locations</label>
+                <label><input type="checkbox" name="docsSchedules"> Maintenance schedules</label>
+                <label><input type="checkbox" name="docsResponse"> Incident response procedures</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>SECURITY MONITORING</h3>
+            <label><input type="checkbox" name="basicMonitoring"> Implemented basic monitoring:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="monitoringLogin"> Regular login checks</label>
+                <label><input type="checkbox" name="monitoringForms"> Review of form submissions</label>
+                <label><input type="checkbox" name="monitoringActivity"> Checking for unusual activity</label>
+                <label><input type="checkbox" name="monitoringFeedback"> Monitoring customer feedback for issues</label>
+            </div>
+
+            <label><input type="checkbox" name="notifications"> Set up notification systems:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="notifyLogin"> Email alerts for login attempts (if available)</label>
+                <label><input type="checkbox" name="notifyForms"> Notifications for form submissions</label>
+                <label><input type="checkbox" name="notifyPayments"> Alerts for payment activities</label>
+            </div>
+
+            <label><input type="checkbox" name="incidentPlan"> Created incident response plan:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="planSteps"> Steps to take if security issue is suspected</label>
+                <label><input type="checkbox" name="planContact"> Contact information for support</label>
+                <label><input type="checkbox" name="planBackup"> Backup restoration procedures</label>
+                <label><input type="checkbox" name="planCommunication"> Customer communication templates</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>PAYMENT SECURITY (IF APPLICABLE)</h3>
+            <label><input type="checkbox" name="paymentProcessors"> Used secure payment processors:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="processorsSetup"> Set up Stripe, PayPal, or other trusted processor</label>
+                <label><input type="checkbox" name="processorsNoStorage"> Avoided storing payment information directly</label>
+                <label><input type="checkbox" name="processorsSSL"> Configured proper SSL/HTTPS</label>
+            </div>
+
+            <label><input type="checkbox" name="orderVerification"> Implemented order verification:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="verifyProcess"> Process to verify unusual orders</label>
+                <label><input type="checkbox" name="verifyFraud"> Fraud detection measures</label>
+                <label><input type="checkbox" name="verifyRefund"> Clear refund policy</label>
+            </div>
+
+            <label><input type="checkbox" name="paymentProtection"> Protected customer payment information:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="protectAccess"> Limited access to order information</label>
+                <label><input type="checkbox" name="protectHandling"> Secure handling of any payment details</label>
+                <label><input type="checkbox" name="protectDisposal"> Proper disposal of printed information</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>ADDITIONAL SECURITY MEASURES</h3>
+            <label><input type="checkbox" name="formProtection"> Implemented form spam protection:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="formCAPTCHA"> CAPTCHA or similar verification (if available)</label>
+                <label><input type="checkbox" name="formValidation"> Form validation requirements</label>
+                <label><input type="checkbox" name="formMonitoring"> Monitoring of form submissions</label>
+            </div>
+
+            <label><input type="checkbox" name="contactSecured"> Secured contact information:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="contactForms"> Used contact forms instead of direct email display</label>
+                <label><input type="checkbox" name="contactPhone"> Protected phone numbers if necessary</label>
+                <label><input type="checkbox" name="contactAddress"> Considered privacy for physical address</label>
+            </div>
+
+            <label><input type="checkbox" name="thirdPartyReview"> Reviewed third-party integrations:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="thirdPartySecurity"> Evaluated security of connected services</label>
+                <label><input type="checkbox" name="thirdPartyNecessary"> Used only necessary integrations</label>
+                <label><input type="checkbox" name="thirdPartyMonitoring"> Monitored third-party access</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>SECURITY VERIFICATION</h3>
+            <label><input type="checkbox" name="securityTested"> Tested all security measures:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="testLogin"> Logged in with security features enabled</label>
+                <label><input type="checkbox" name="testBackup"> Verified backup access and usability</label>
+                <label><input type="checkbox" name="testLegal"> Checked legal page accessibility</label>
+                <label><input type="checkbox" name="testProducts"> Tested digital product security</label>
+                <label><input type="checkbox" name="testPayments"> Reviewed payment process security</label>
+            </div>
+
+            <label><input type="checkbox" name="securityDocumented"> Documented security implementation:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="docRecord"> Created record of all security measures</label>
+                <label><input type="checkbox" name="docScreenshots"> Saved screenshots of security settings</label>
+                <label><input type="checkbox" name="docStored"> Stored documentation securely</label>
+                <label><input type="checkbox" name="docShared"> Shared with necessary team members</label>
+            </div>
+
+            <label><input type="checkbox" name="improvementPlan"> Created improvement plan:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="planGaps"> Noted any security gaps to address</label>
+                <label><input type="checkbox" name="planResearch"> Researched additional security options</label>
+                <label><input type="checkbox" name="planEnhancements"> Planned future security enhancements</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>NOTES AND SECURITY JOURNAL</h3>
+            <p>Use this space to document security activities, concerns, or future plans:</p>
+            <textarea name="securityNotes"></textarea>
+        </div>
+    </form>
+</body>
+</html>

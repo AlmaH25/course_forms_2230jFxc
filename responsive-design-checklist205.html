@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Checklist</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3 { color: #333; }
+        label { display: block; margin: 5px 0; }
+        input[type="checkbox"] { margin-right: 10px; }
+        .section { margin-bottom: 20px; }
+        .sub-section { margin-left: 20px; }
+        p { margin: 10px 0; }
+        .note { font-style: italic; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Responsive Design Checklist</h1>
+    <h2>For Creative Entrepreneurs Using Systeme.io</h2>
+    <p>Use this checklist to ensure your website looks great and functions properly on all devices - from desktop computers to smartphones.</p>
+
+    <form id="responsiveChecklistForm">
+        <div class="section">
+            <h3>DESKTOP VIEW (1024px and wider)</h3>
+            <label><input type="checkbox" name="desktopLayout"> Overall Layout:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="desktopNoScroll"> Content fits within the screen width without horizontal scrolling</label>
+                <label><input type="checkbox" name="desktopSpacing"> Sections have appropriate spacing between them</label>
+                <label><input type="checkbox" name="desktopColumns"> Columns display side by side as intended</label>
+                <label><input type="checkbox" name="desktopImages"> Images are properly sized and not distorted</label>
+                <label><input type="checkbox" name="desktopText"> Text is readable and not too small or too large</label>
+            </div>
+
+            <label><input type="checkbox" name="desktopNav"> Navigation:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="desktopMenuVisible"> Menu items are clearly visible</label>
+                <label><input type="checkbox" name="desktopDropdown"> Dropdown menus work correctly</label>
+                <label><input type="checkbox" name="desktopMenuSpacing"> Menu spacing is appropriate</label>
+                <label><input type="checkbox" name="desktopActivePage"> Active page is indicated</label>
+            </div>
+
+            <label><input type="checkbox" name="desktopContent"> Content:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="desktopHeadings"> Headings are properly sized and stand out</label>
+                <label><input type="checkbox" name="desktopLineLength"> Text paragraphs have comfortable line length (50-75 characters per line)</label>
+                <label><input type="checkbox" name="desktopImageAlign"> Images align properly with text</label>
+                <label><input type="checkbox" name="desktopButtons"> Buttons are appropriately sized</label>
+                <label><input type="checkbox" name="desktopForms"> Forms are properly aligned and spaced</label>
+            </div>
+
+            <label><input type="checkbox" name="desktopInteractive"> Interactive Elements:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="desktopHover"> Hover effects work as expected</label>
+                <label><input type="checkbox" name="desktopDropdownPos"> Dropdown menus appear in the right position</label>
+                <label><input type="checkbox" name="desktopPopups"> Popups display correctly</label>
+                <label><input type="checkbox" name="desktopSliders"> Sliders and carousels function properly</label>
+                <label><input type="checkbox" name="desktopFormValidate"> Forms validate correctly</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>TABLET VIEW (768px to 1023px)</h3>
+            <label><input type="checkbox" name="tabletLayout"> Overall Layout:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="tabletAdjust"> Content adjusts to narrower screen width</label>
+                <label><input type="checkbox" name="tabletColumns"> Some side-by-side columns may begin to stack</label>
+                <label><input type="checkbox" name="tabletSpacing"> Spacing is adjusted appropriately (usually slightly reduced)</label>
+                <label><input type="checkbox" name="tabletNoScroll"> No horizontal scrolling is required</label>
+                <label><input type="checkbox" name="tabletProportions"> Page elements maintain proper proportions</label>
+            </div>
+
+            <label><input type="checkbox" name="tabletNav"> Navigation:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="tabletMenuCondense"> Menu may condense or change style</label>
+                <label><input type="checkbox" name="tabletDropdown"> Dropdown menus still function properly</label>
+                <label><input type="checkbox" name="tabletTouchTargets"> Touch targets (buttons, links) are large enough for tablet use</label>
+                <label><input type="checkbox" name="tabletMenuAccess"> Menu remains easily accessible</label>
+            </div>
+
+            <label><input type="checkbox" name="tabletContent"> Content:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="tabletTextSize"> Text size remains comfortable for reading</label>
+                <label><input type="checkbox" name="tabletImages"> Images resize proportionally</label>
+                <label><input type="checkbox" name="tabletButtons"> Buttons remain prominent and tappable</label>
+                <label><input type="checkbox" name="tabletForms"> Forms adjust to fit the narrower width</label>
+                <label><input type="checkbox" name="tabletSpacing"> Spacing between elements adjusts appropriately</label>
+            </div>
+
+            <label><input type="checkbox" name="tabletInteractive"> Interactive Elements:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="tabletTouch"> Touch-based interactions work properly</label>
+                <label><input type="checkbox" name="tabletPopups"> Popups don't cover too much screen space</label>
+                <label><input type="checkbox" name="tabletSliders"> Sliders and carousels are still easy to navigate</label>
+                <label><input type="checkbox" name="tabletFormFields"> Form fields are large enough for comfortable input</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>MOBILE VIEW (320px to 767px)</h3>
+            <label><input type="checkbox" name="mobileLayout"> Overall Layout:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="mobileStack"> Content stacks vertically in a single column</label>
+                <label><input type="checkbox" name="mobileColumns"> Side-by-side columns stack completely</label>
+                <label><input type="checkbox" name="mobileSpacing"> Spacing is reduced but still provides visual separation</label>
+                <label><input type="checkbox" name="mobileNoScroll"> No horizontal scrolling is required</label>
+                <label><input type="checkbox" name="mobilePriority"> Content priority is maintained (most important content first)</label>
+            </div>
+
+            <label><input type="checkbox" name="mobileNav"> Navigation:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="mobileHamburger"> Menu condenses to a hamburger icon (☰)</label>
+                <label><input type="checkbox" name="mobileMenuToggle"> Mobile menu opens and closes properly</label>
+                <label><input type="checkbox" name="mobileMenuItems"> All menu items are accessible</label>
+                <label><input type="checkbox" name="mobileMenuSpace"> Menu doesn't take up too much screen space when open</label>
+                <label><input type="checkbox" name="mobileTouchTargets"> Touch targets are large enough (at least 44px tall)</label>
+            </div>
+
+            <label><input type="checkbox" name="mobileContent"> Content:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="mobileTextSize"> Text is large enough to read without zooming (at least 16px)</label>
+                <label><input type="checkbox" name="mobileHeadings"> Headings may be reduced in size but remain prominent</label>
+                <label><input type="checkbox" name="mobileImages"> Images resize to fit screen width</label>
+                <label><input type="checkbox" name="mobileButtons"> Buttons are large enough to tap easily (at least 44px tall)</label>
+                <label><input type="checkbox" name="mobileForms"> Forms stack fields vertically</label>
+            </div>
+
+            <label><input type="checkbox" name="mobileInteractive"> Interactive Elements:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="mobileTouch"> All elements can be interacted with via touch</label>
+                <label><input type="checkbox" name="mobileNoHover"> No hover-dependent functionality</label>
+                <label><input type="checkbox" name="mobilePopups"> Popups don't overwhelm the screen</label>
+                <label><input type="checkbox" name="mobileSliders"> Sliders and carousels have touch-friendly navigation</label>
+                <label><input type="checkbox" name="mobileFormFields"> Form fields are large enough for comfortable input on a small screen</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>SPECIFIC ELEMENT CHECKS</h3>
+            <strong>Text Elements</strong>
+            <label><input type="checkbox" name="headings"> Headings:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="headingsDesktop"> Desktop: Bold and prominent</label>
+                <label><input type="checkbox" name="headingsTablet"> Tablet: Slightly reduced size if needed</label>
+                <label><input type="checkbox" name="headingsMobile"> Mobile: Further reduced but still stand out</label>
+                <label><input type="checkbox" name="headingsHierarchy"> All devices: Maintain hierarchy (H1 > H2 > H3)</label>
+            </div>
+
+            <label><input type="checkbox" name="paragraphs"> Paragraphs:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="paragraphsDesktop"> Desktop: Comfortable line length (50-75 characters)</label>
+                <label><input type="checkbox" name="paragraphsTablet"> Tablet: Adjust to narrower width</label>
+                <label><input type="checkbox" name="paragraphsMobile"> Mobile: Full width with increased line height</label>
+                <label><input type="checkbox" name="paragraphsSize"> All devices: At least 16px font size</label>
+            </div>
+
+            <label><input type="checkbox" name="lists"> Lists:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="listsDesktop"> Desktop: Proper indentation and bullet/number alignment</label>
+                <label><input type="checkbox" name="listsTablet"> Tablet: Maintain formatting</label>
+                <label><input type="checkbox" name="listsMobile"> Mobile: May need adjusted spacing</label>
+                <label><input type="checkbox" name="listsDistinction"> All devices: Clear distinction between list items</label>
+            </div>
+
+            <strong>Image Elements</strong>
+            <label><input type="checkbox" name="singleImages"> Single Images:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="imagesDesktop"> Desktop: Displayed at intended size</label>
+                <label><input type="checkbox" name="imagesTablet"> Tablet: Scale proportionally to fit</label>
+                <label><input type="checkbox" name="imagesMobile"> Mobile: Resize to fit screen width</label>
+                <label><input type="checkbox" name="imagesQuality"> All devices: Not pixelated or distorted</label>
+            </div>
+
+            <label><input type="checkbox" name="galleries"> Galleries:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="galleriesDesktop"> Desktop: Multiple columns as designed</label>
+                <label><input type="checkbox" name="galleriesTablet"> Tablet: Possibly fewer columns</label>
+                <label><input type="checkbox" name="galleriesMobile"> Mobile: 1-2 columns maximum</label>
+                <label><input type="checkbox" name="galleriesNav"> All devices: Navigation controls are accessible</label>
+            </div>
+
+            <label><input type="checkbox" name="backgroundImages"> Background Images:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="bgImagesDesktop"> Desktop: Fully visible as intended</label>
+                <label><input type="checkbox" name="bgImagesTablet"> Tablet: May need different cropping</label>
+                <label><input type="checkbox" name="bgImagesMobile"> Mobile: Consider simpler backgrounds or solid colors</label>
+                <label><input type="checkbox" name="bgImagesReadable"> All devices: Text over images remains readable</label>
+            </div>
+
+            <strong>Button Elements</strong>
+            <label><input type="checkbox" name="ctaButtons"> Call-to-Action Buttons:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="ctaDesktop"> Desktop: Prominent and properly sized</label>
+                <label><input type="checkbox" name="ctaTablet"> Tablet: Maintain visibility and size</label>
+                <label><input type="checkbox" name="ctaMobile"> Mobile: Larger (44px+ height) and possibly full width</label>
+                <label><input type="checkbox" name="ctaContrast"> All devices: Clear contrast and readable text</label>
+            </div>
+
+            <label><input type="checkbox" name="formButtons"> Form Submit Buttons:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="formBtnDesktop"> Desktop: Aligned with form fields</label>
+                <label><input type="checkbox" name="formBtnTablet"> Tablet: Maintain alignment</label>
+                <label><input type="checkbox" name="formBtnMobile"> Mobile: Often full width</label>
+                <label><input type="checkbox" name="formBtnAction"> All devices: Clearly indicate action</label>
+            </div>
+
+            <label><input type="checkbox" name="navButtons"> Navigation Buttons:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="navBtnDesktop"> Desktop: Properly spaced</label>
+                <label><input type="checkbox" name="navBtnTablet"> Tablet: Adequate spacing for touch</label>
+                <label><input type="checkbox" name="navBtnMobile"> Mobile: Large enough for easy tapping</label>
+                <label><input type="checkbox" name="navBtnFeedback"> All devices: Clear feedback when pressed</label>
+            </div>
+
+            <strong>Form Elements</strong>
+            <label><input type="checkbox" name="inputFields"> Input Fields:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="inputDesktop"> Desktop: Appropriate width for content type</label>
+                <label><input type="checkbox" name="inputTablet"> Tablet: Adjust to available width</label>
+                <label><input type="checkbox" name="inputMobile"> Mobile: Usually full width</label>
+                <label><input type="checkbox" name="inputHeight"> All devices: Tall enough for easy interaction (44px+)</label>
+            </div>
+
+            <label><input type="checkbox" name="fieldLabels"> Field Labels:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="labelsDesktop"> Desktop: Positioned consistently (top or left)</label>
+                <label><input type="checkbox" name="labelsTablet"> Tablet: May need to move above fields</label>
+                <label><input type="checkbox" name="labelsMobile"> Mobile: Almost always above fields</label>
+                <label><input type="checkbox" name="labelsAssociation"> All devices: Clearly associated with their fields</label>
+            </div>
+
+            <label><input type="checkbox" name="checkboxRadio"> Checkboxes and Radio Buttons:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="checkboxDesktop"> Desktop: Properly aligned with labels</label>
+                <label><input type="checkbox" name="checkboxTablet"> Tablet: Maintain alignment</label>
+                <label><input type="checkbox" name="checkboxMobile"> Mobile: Larger touch targets</label>
+                <label><input type="checkbox" name="checkboxLabels"> All devices: Clear which label belongs to which input</label>
+            </div>
+
+            <strong>Navigation Elements</strong>
+            <label><input type="checkbox" name="mainMenu"> Main Menu:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="menuDesktop"> Desktop: Horizontal or vertical as designed</label>
+                <label><input type="checkbox" name="menuTablet"> Tablet: May begin to condense</label>
+                <label><input type="checkbox" name="menuMobile"> Mobile: Hamburger menu with tap to open</label>
+                <label><input type="checkbox" name="menuCurrent"> All devices: Current page indicated</label>
+            </div>
+
+            <label><input type="checkbox" name="dropdownMenus"> Dropdown Menus:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="dropdownDesktop"> Desktop: Open on hover or click</label>
+                <label><input type="checkbox" name="dropdownTablet"> Tablet: Open on tap</label>
+                <label><input type="checkbox" name="dropdownMobile"> Mobile: Clearly indicate they contain submenus</label>
+                <label><input type="checkbox" name="dropdownEdges"> All devices: Don't extend beyond screen edges</label>
+            </div>
+
+            <label><input type="checkbox" name="footerNav"> Footer Navigation:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="footerDesktop"> Desktop: Multiple columns</label>
+                <label><input type="checkbox" name="footerTablet"> Tablet: Fewer columns</label>
+                <label><input type="checkbox" name="footerMobile"> Mobile: Often stacked in single column</label>
+                <label><input type="checkbox" name="footerSpacing"> All devices: Links have adequate spacing</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>TESTING PROCEDURES</h3>
+            <label><input type="checkbox" name="deviceTesting"> Device Testing:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="testPreview"> Use Systeme.io's device preview mode for initial checks</label>
+                <label><input type="checkbox" name="testRealDevices"> Test on actual devices when possible</label>
+                <label><input type="checkbox" name="testOS"> Test on both iOS and Android if possible</label>
+                <label><input type="checkbox" name="testBrowsers"> Test in multiple browsers (Chrome, Safari, Firefox, Edge)</label>
+            </div>
+
+            <label><input type="checkbox" name="interactionTesting"> Interaction Testing:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="testClicks"> Click/tap all buttons and links</label>
+                <label><input type="checkbox" name="testForms"> Fill out and submit all forms</label>
+                <label><input type="checkbox" name="testDropdowns"> Test all dropdown menus</label>
+                <label><input type="checkbox" name="testElements"> Try all interactive elements</label>
+                <label><input type="checkbox" name="testTouch"> Verify all functions work on touch devices</label>
+            </div>
+
+            <label><input type="checkbox" name="contentTesting"> Content Testing:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="testTextSize"> Check for text that's too small</label>
+                <label><input type="checkbox" name="testImages"> Look for images that don't resize properly</label>
+                <label><input type="checkbox" name="testCutoff"> Verify no content is cut off</label>
+                <label><input type="checkbox" name="testNoScroll"> Ensure no horizontal scrolling is needed</label>
+                <label><input type="checkbox" name="testVisible"> Check that all important content is visible without scrolling too much</label>
+            </div>
+
+            <label><input type="checkbox" name="performanceTesting"> Performance Testing:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="testLoadTime"> Check page load time on mobile connections</label>
+                <label><input type="checkbox" name="testImageLoad"> Verify images load properly</label>
+                <label><input type="checkbox" name="testResponse"> Test that interactive elements respond quickly</label>
+                <label><input type="checkbox" name="testScrolling"> Ensure smooth scrolling</label>
+                <label><input type="checkbox" name="testFormSubmit"> Check that forms submit without delays</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>COMMON RESPONSIVE ISSUES AND FIXES</h3>
+            <label><input type="checkbox" name="scrollIssue"> Horizontal Scrolling:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="scrollMaxWidth"> Fix: Set max-width: 100% on elements</label>
+                <label><input type="checkbox" name="scrollFixedWidths"> Fix: Remove fixed widths</label>
+                <label><input type="checkbox" name="scrollPadding"> Fix: Adjust padding and margins</label>
+            </div>
+
+            <label><input type="checkbox" name="textSmallIssue"> Text Too Small:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="textMinSize"> Fix: Set minimum font size (16px recommended)</label>
+                <label><input type="checkbox" name="textMobileSize"> Fix: Increase size specifically for mobile</label>
+                <label><input type="checkbox" name="textLineHeight"> Fix: Increase line height for better readability</label>
+            </div>
+
+            <label><input type="checkbox" name="elementsCloseIssue"> Elements Too Close Together:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="closeMargin"> Fix: Increase margin between elements</label>
+                <label><input type="checkbox" name="closeTargets"> Fix: Make touch targets larger</label>
+                <label><input type="checkbox" name="closeStack"> Fix: Stack elements vertically instead of horizontally</label>
+            </div>
+
+            <label><input type="checkbox" name="imagesLargeIssue"> Images Too Large:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="largeSmaller"> Fix: Use smaller or cropped versions on mobile</label>
+                <label><input type="checkbox" name="largeHide"> Fix: Consider hiding decorative images on mobile</label>
+                <label><input type="checkbox" name="largeScale"> Fix: Ensure images scale proportionally</label>
+            </div>
+
+            <label><input type="checkbox" name="formsAdaptIssue"> Forms Not Adapting:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="formsLabels"> Fix: Stack labels above fields</label>
+                <label><input type="checkbox" name="formsWidth"> Fix: Make fields full width on mobile</label>
+                <label><input type="checkbox" name="formsHeight"> Fix: Increase field height for easier tapping</label>
+            </div>
+
+            <label><input type="checkbox" name="menusWorkIssue"> Menus Not Working:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="menusMobile"> Fix: Implement proper mobile menu</label>
+                <label><input type="checkbox" name="menusDropdown"> Fix: Ensure dropdown indicators are tappable</label>
+                <label><input type="checkbox" name="menusTest"> Fix: Test menu opening and closing</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>RESPONSIVE DESIGN BEST PRACTICES</h3>
+            <label><input type="checkbox" name="mobileFirst"> Mobile-First Approach:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="mobileFirstDesign"> Design for smallest screens first</label>
+                <label><input type="checkbox" name="mobileFirstEnhance"> Add enhancements for larger screens</label>
+                <label><input type="checkbox" name="mobileFirstContent"> Focus on essential content for mobile</label>
+                <label><input type="checkbox" name="mobileFirstPerf"> Prioritize performance on mobile devices</label>
+            </div>
+
+            <label><input type="checkbox" name="contentPriority"> Content Prioritization:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="priorityFirst"> Most important content appears first</label>
+                <label><input type="checkbox" name="priorityOrder"> Consider different content order on mobile</label>
+                <label><input type="checkbox" name="priorityHide"> Hide non-essential elements on smaller screens</label>
+                <label><input type="checkbox" name="priorityCTA"> Ensure call-to-action is always visible</label>
+            </div>
+
+            <label><input type="checkbox" name="touchFriendly"> Touch-Friendly Design:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="touchSize"> All interactive elements at least 44px tall</label>
+                <label><input type="checkbox" name="touchSpacing"> Adequate spacing between tappable elements</label>
+                <label><input type="checkbox" name="touchNoHover"> No functionality dependent on hover</label>
+                <label><input type="checkbox" name="touchFeedback"> Clear visual feedback for interactions</label>
+            </div>
+
+            <label><input type="checkbox" name="perfOptimization"> Performance Optimization:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="perfImages"> Optimize images for faster loading</label>
+                <label><input type="checkbox" name="perfBackground"> Minimize use of large background images on mobile</label>
+                <label><input type="checkbox" name="perfSizes"> Consider loading different image sizes based on device</label>
+                <label><input type="checkbox" name="perfTest"> Test speed on actual mobile devices or throttled connections</label>
+            </div>
+
+            <label><input type="checkbox" name="consistentExp"> Consistent Experience:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="consistentContent"> All content accessible on all devices</label>
+                <label><input type="checkbox" name="consistentStyle"> Similar visual style across breakpoints</label>
+                <label><input type="checkbox" name="consistentFunction"> Functionality works regardless of device</label>
+                <label><input type="checkbox" name="consistentBrand"> Brand identity maintained at all sizes</label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>FINAL RESPONSIVE CHECKLIST</h3>
+            <label><input type="checkbox" name="finalDesktop"> Desktop View:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="finalDesktopLayout"> Layout appears as designed</label>
+                <label><input type="checkbox" name="finalDesktopPosition"> All elements properly positioned</label>
+                <label><input type="checkbox" name="finalDesktopSpacing"> Spacing looks professional</label>
+                <label><input type="checkbox" name="finalDesktopFunction"> All functionality works</label>
+            </div>
+
+            <label><input type="checkbox" name="finalTablet"> Tablet View:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="finalTabletAdjust"> Content adjusts appropriately</label>
+                <label><input type="checkbox" name="finalTabletTargets"> Touch targets large enough</label>
+                <label><input type="checkbox" name="finalTabletLayout"> Layout modifications make sense</label>
+                <label><input type="checkbox" name="finalTabletFunction"> All functionality works</label>
+            </div>
+
+            <label><input type="checkbox" name="finalMobile"> Mobile View:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="finalMobileStack"> Content stacks logically</label>
+                <label><input type="checkbox" name="finalMobileText"> Text is readable without zooming</label>
+                <label><input type="checkbox" name="finalMobileNav"> Navigation is usable</label>
+                <label><input type="checkbox" name="finalMobileForms"> Forms are easy to complete</label>
+                <label><input type="checkbox" name="finalMobileFunction"> All functionality works</label>
+                <label><input type="checkbox" name="finalMobileNoScroll"> No horizontal scrolling required</label>
+            </div>
+
+            <label><input type="checkbox" name="finalAllDevices"> All Devices:</label>
+            <div class="sub-section">
+                <label><input type="checkbox" name="finalBranding"> Branding is consistent</label>
+                <label><input type="checkbox" name="finalContentAccess"> Important content is accessible</label>
+                <label><input type="checkbox" name="finalCTAProminent"> Call-to-action buttons are prominent</label>
+                <label><input type="checkbox" name="finalLoadTime"> Load time is reasonable</label>
+                <label><input type="checkbox" name="finalExperience"> Overall experience is positive</label>
+            </div>
+        </div>
+    </form>
+
+    <p class="note">Remember: A truly responsive website provides an excellent experience regardless of the device your visitors are using. This is especially important for creative entrepreneurs, as your audience may discover your work on any device, and you want to make a great impression every time!</p>
+</body>
+</html>
