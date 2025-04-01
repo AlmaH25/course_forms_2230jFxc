@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platform Setup Checklist</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3 { color: #333; }
+        label { display: block; margin: 5px 0; }
+        input[type="checkbox"] { margin-right: 10px; }
+        input[type="text"] { width: 200px; margin-left: 20px; }
+        textarea { width: 100%; height: 80px; margin-top: 5px; }
+        button { margin-top: 20px; padding: 10px 20px; background-color: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        .section { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Platform Setup Checklist</h1>
+    <h2>For Creative Entrepreneurs</h2>
+
+    <form id="checklistForm">
+        <div class="section">
+            <h3>ACCOUNT AND DOMAIN SETUP</h3>
+            <strong>Platform Account:</strong>
+            <label><input type="checkbox" name="accountCreated"> Created account on chosen platform: <input type="text" name="platformName"></label>
+            <label><input type="checkbox" name="planSelected"> Selected appropriate plan: <input type="text" name="planName"></label>
+            <label><input type="checkbox" name="strongPassword"> Secured account with strong password</label>
+            <label><input type="checkbox" name="twoFactor"> Enabled two-factor authentication (if available)</label>
+            <label><input type="checkbox" name="savedCredentials"> Saved login credentials in secure location</label>
+
+            <strong>Domain Connection:</strong>
+            <label><input type="checkbox" name="domainNameSet"> Domain name: <input type="text" name="domainName"></label>
+            <label><input type="checkbox" name="registrarSet"> Registrar: <input type="text" name="registrarName"></label>
+            <label><input type="checkbox" name="domainConnected"> Connected domain to platform</label>
+            <label><input type="checkbox" name="nameserversUpdated"> Updated nameservers (if required): <input type="text" name="nameservers"></label>
+            <label><input type="checkbox" name="domainVerified"> Verified domain is resolving correctly</label>
+            <label><input type="checkbox" name="sslEnabled"> SSL/HTTPS security enabled</label>
+            <label><input type="checkbox" name="wwwConfig"> www vs. non-www version configured</label>
+        </div>
+
+        <div class="section">
+            <h3>BASIC CONFIGURATION</h3>
+            <strong>Business Information:</strong>
+            <label><input type="checkbox" name="businessName"> Added business name</label>
+            <label><input type="checkbox" name="tagline"> Created tagline/description</label>
+            <label><input type="checkbox" name="logoUploaded"> Uploaded logo</label>
+            <label><input type="checkbox" name="faviconAdded"> Added favicon (browser icon)</label>
+            <label><input type="checkbox" name="timeZoneSet"> Set time zone and regional settings</label>
+            <label><input type="checkbox" name="languageSet"> Configured language settings</label>
+            <label><input type="checkbox" name="contactInfo"> Added contact information</label>
+
+            <strong>Legal Requirements:</strong>
+            <label><input type="checkbox" name="privacyPolicy"> Privacy policy added</label>
+            <label><input type="checkbox" name="termsService"> Terms of service/conditions added</label>
+            <label><input type="checkbox" name="cookieNotice"> Cookie notice configured</label>
+            <label><input type="checkbox" name="copyrightNotice"> Copyright notice added</label>
+            <label><input type="checkbox" name="shippingPolicy"> Shipping/return policies (if applicable)</label>
+            <label><input type="checkbox" name="accessibility"> Accessibility statement (recommended)</label>
+
+            <strong>Development Mode:</strong>
+            <label><input type="checkbox" name="passwordProtection"> Enabled password protection or maintenance mode</label>
+            <label><input type="checkbox" name="comingSoon"> Created "Coming Soon" page (optional)</label>
+            <label><input type="checkbox" name="noIndexing"> Disabled search engine indexing during development</label>
+            <label><input type="checkbox" name="launchDate"> Documented expected launch date: <input type="text" name="launchDateValue"></label>
+        </div>
+
+        <div class="section">
+            <h3>DESIGN FOUNDATION</h3>
+            <strong>Theme/Template:</strong>
+            <label><input type="checkbox" name="themeSelected"> Selected theme/template: <input type="text" name="themeName"></label>
+            <label><input type="checkbox" name="premiumTheme"> Purchased premium theme (if applicable)</label>
+            <label><input type="checkbox" name="themeInstalled"> Installed and activated theme</label>
+            <label><input type="checkbox" name="themeUpdated"> Updated theme to latest version</label>
+            <label><input type="checkbox" name="themeDocs"> Familiarized with theme documentation</label>
+
+            <strong>Basic Design Elements:</strong>
+            <label><input type="checkbox" name="colorScheme"> Set up color scheme:</label>
+            <label>Primary: <input type="text" name="colorPrimary"></label>
+            <label>Secondary: <input type="text" name="colorSecondary"></label>
+            <label>Accent: <input type="text" name="colorAccent"></label>
+            <label><input type="checkbox" name="typography"> Selected typography:</label>
+            <label>Headings: <input type="text" name="typographyHeadings"></label>
+            <label>Body text: <input type="text" name="typographyBody"></label>
+            <label><input type="checkbox" name="placeholderImages"> Added placeholder images</label>
+            <label><input type="checkbox" name="pageLayouts"> Set up basic page layouts</label>
+            <label><input type="checkbox" name="mobileResponsive"> Checked mobile responsiveness</label>
+        </div>
+
+        <div class="section">
+            <h3>CONTENT FOUNDATION</h3>
+            <strong>Essential Pages Created:</strong>
+            <label><input type="checkbox" name="pageHomepage"> Homepage</label>
+            <label><input type="checkbox" name="pageAbout"> About</label>
+            <label><input type="checkbox" name="pageServices"> Services/Products</label>
+            <label><input type="checkbox" name="pagePortfolio"> Portfolio/Gallery</label>
+            <label><input type="checkbox" name="pageContact"> Contact</label>
+            <label><input
