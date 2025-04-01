@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Selection and Customization Worksheet</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1, h2, h3 { color: #333; }
+        label { display: block; margin: 5px 0; }
+        input[type="checkbox"] { margin-right: 10px; }
+        input[type="text"] { width: 200px; margin-left: 20px; }
+        textarea { width: 100%; height: 80px; margin-top: 5px; }
+        button { margin-top: 20px; padding: 10px 20px; background-color: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        .section { margin-bottom: 20px; }
+        .sub-section { margin-left: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Theme Selection and Customization Worksheet</h1>
+    <h2>For Creative Entrepreneurs</h2>
+
+    <form id="worksheetForm">
+        <div class="section">
+            <h3>THEME REQUIREMENTS ASSESSMENT</h3>
+            <strong>Business Type:</strong>
+            <label><input type="checkbox" name="businessPortfolio"> Portfolio/showcase</label>
+            <label><input type="checkbox" name="businessEcommerce"> E-commerce/product-based</label>
+            <label><input type="checkbox" name="businessService"> Service-based</label>
+            <label><input type="checkbox" name="businessContent"> Content/blog focused</label>
+            <label><input type="checkbox" name="businessHybrid"> Hybrid/multi-purpose</label>
+
+            <strong>Essential Features Needed:</strong>
+            <label><input type="checkbox" name="featurePortfolio"> Portfolio/gallery functionality</label>
+            <label><input type="checkbox" name="featureEcommerce"> E-commerce capabilities</label>
+            <label><input type="checkbox" name="featureBlog"> Blog/journal section</label>
+            <label><input type="checkbox" name="featureContact"> Contact form</label>
+            <label><input type="checkbox" name="featureBooking"> Appointment booking</label>
+            <label><input type="checkbox" name="featureVideo"> Video embedding</label>
+            <label><input type="checkbox" name="featureSocial"> Social media integration</label>
+            <label><input type="checkbox" name="featureEmail"> Email signup integration</label>
+            <label><input type="checkbox" name="featureOther1"> Other: <input type="text" name="featureOther1Value"></label>
+            <label><input type="checkbox" name="featureOther2"> Other: <input type="text" name="featureOther2Value"></label>
+
+            <strong>Design Preferences:</strong>
+            <label><input type="checkbox" name="designMinimal"> Minimal/clean</label>
+            <label><input type="checkbox" name="designBold"> Bold/dramatic</label>
+            <label><input type="checkbox" name="designClassic"> Classic/traditional</label>
+            <label><input type="checkbox" name="designModern"> Modern/contemporary</label>
+            <label><input type="checkbox" name="designPlayful"> Playful/creative</label>
+            <label><input type="checkbox" name="designElegant"> Elegant/sophisticated</label>
+            <label><input type="checkbox" name="designOther"> Other: <input type="text" name="designOtherValue"></label>
+
+            <strong>Layout Preferences:</strong>
+            <label><input type="checkbox" name="layoutSingle"> Single-page</label>
+            <label><input type="checkbox" name="layoutMulti"> Multi-page</label>
+            <label><input type="checkbox" name="layoutGrid"> Grid-based</label>
+            <label><input type="checkbox" name="layoutFullWidth"> Full-width</label>
+            <label><input type="checkbox" name="layoutFixedWidth"> Fixed-width</label>
+            <label><input type="checkbox" name="layoutSidebar"> Sidebar</label>
+            <label><input type="checkbox" name="layoutNoSidebar"> No sidebar</label>
+            <label><input type="checkbox" name="layoutOther"> Other: <input type="text" name="layoutOtherValue"></label>
+        </div>
+
+        <div class="section">
+            <h3>THEME RESEARCH</h3>
+            <strong>Platform-Specific Options:</strong>
+            <p>List themes/templates available on your chosen platform that might meet your needs:</p>
+            <div class="sub-section">
+                <label>1. Name: <input type="text" name="platformTheme1Name"></label>
+                <label>Key features: <input type="text" name="platformTheme1Features"></label>
+                <label>Price: <input type="text" name="platformTheme1Price"></label>
+                <label>URL: <input type="text" name="platformTheme1URL"></label>
+            </div>
+            <div class="sub-section">
+                <label>2. Name: <input type="text" name="platformTheme2Name"></label>
+                <label>Key features: <input type="text" name="platformTheme2Features"></label>
+                <label>Price: <input type="text" name="platformTheme2Price"></label>
+                <label>URL: <input type="text" name="platformTheme2URL"></label>
+            </div>
+            <div class="sub-section">
+                <label>3. Name: <input type="text" name="platformTheme3Name"></label>
+                <label>Key features: <input type="text" name="platformTheme3Features"></label>
+                <label>Price: <input type="text" name="platformTheme3Price"></label>
+                <label>URL: <input type="text" name="platformTheme3URL"></label>
+            </div>
+
+            <strong>Industry-Specific Themes:</strong>
+            <p>List themes designed specifically for your creative niche:</p>
+            <div class="sub-section">
+                <label>1. Name: <input type="text" name="industryTheme1Name"></label>
+                <label>Platform: <input type="text" name="industryTheme1Platform"></label>
+                <label>Key features: <input type="text" name="industryTheme1Features"></label>
+                <label>Price: <input type="text" name="industryTheme1Price"></label>
+                <label>URL: <input type="text" name="industryTheme1URL"></label>
+            </div>
+            <div class="sub-section">
+                <label>2. Name: <input type="text" name="industryTheme2Name"></label>
+                <label>Platform: <input type="text" name="industryTheme2Platform"></label>
+                <label>Key features: <input type="text" name="industryTheme2Features"></label>
+                <label>Price: <input type="text" name="industryTheme2Price"></label>
+                <label>URL: <input type="text" name="industryTheme2URL"></label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>THEME EVALUATION</h3>
+            <strong>Top Theme Choice #1:</strong>
+            <div class="sub-section">
+                <label>Name: <input type="text" name="topTheme1Name"></label>
+                <label>Platform: <input type="text" name="topTheme1Platform"></label>
+                <label>Price: <input type="text" name="topTheme1Price"></label>
+                <label>Pros: <textarea name="topTheme1Pros"></textarea></label>
+                <label>Cons: <textarea name="topTheme1Cons"></textarea></label>
+                <strong>Customization Options:</strong>
+                <label><input type="checkbox" name="topTheme1Color"> Color customization</label>
+                <label><input type="checkbox" name="topTheme1Typography"> Typography options</label>
+                <label><input type="checkbox" name="topTheme1Layout"> Layout flexibility</label>
+                <label><input type="checkbox" name="topTheme1Header"> Header options</label>
+                <label><input type="checkbox" name="topTheme1Footer"> Footer options</label>
+                <label><input type="checkbox" name="topTheme1Mobile"> Mobile customization</label>
+                <label><input type="checkbox" name="topTheme1Other"> Other: <input type="text" name="topTheme1OtherValue"></label>
+                <strong>Performance:</strong>
+                <label>Loading speed: 
+                    <input type="checkbox" name="topTheme1SpeedFast"> Fast 
+                    <input type="checkbox" name="topTheme1SpeedMedium"> Medium 
+                    <input type="checkbox" name="topTheme1SpeedSlow"> Slow
+                </label>
+                <label>Mobile responsiveness: 
+                    <input type="checkbox" name="topTheme1MobileExcellent"> Excellent 
+                    <input type="checkbox" name="topTheme1MobileGood"> Good 
+                    <input type="checkbox" name="topTheme1MobileFair"> Fair 
+                    <input type="checkbox" name="topTheme1MobilePoor"> Poor
+                </label>
+                <label>Browser compatibility: 
+                    <input type="checkbox" name="topTheme1BrowserExcellent"> Excellent 
+                    <input type="checkbox" name="topTheme1BrowserGood"> Good 
+                    <input type="checkbox" name="topTheme1BrowserFair"> Fair 
+                    <input type="checkbox" name="topTheme1BrowserPoor"> Poor
+                </label>
+            </div>
+
+            <strong>Top Theme Choice #2:</strong>
+            <div class="sub-section">
+                <label>Name: <input type="text" name="topTheme2Name"></label>
+                <label>Platform: <input type="text" name="topTheme2Platform"></label>
+                <label>Price: <input type="text" name="topTheme2Price"></label>
+                <label>Pros: <textarea name="topTheme2Pros"></textarea></label>
+                <label>Cons: <textarea name="topTheme2Cons"></textarea></label>
+                <strong>Customization Options:</strong>
+                <label><input type="checkbox" name="topTheme2Color"> Color customization</label>
+                <label><input type="checkbox" name="topTheme2Typography"> Typography options</label>
+                <label><input type="checkbox" name="topTheme2Layout"> Layout flexibility</label>
+                <label><input type="checkbox" name="topTheme2Header"> Header options</label>
+                <label><input type="checkbox" name="topTheme2Footer"> Footer options</label>
+                <label><input type="checkbox" name="topTheme2Mobile"> Mobile customization</label>
+                <label><input type="checkbox" name="topTheme2Other"> Other: <input type="text" name="topTheme2OtherValue"></label>
+                <strong>Performance:</strong>
+                <label>Loading speed: 
+                    <input type="checkbox" name="topTheme2SpeedFast"> Fast 
+                    <input type="checkbox" name="topTheme2SpeedMedium"> Medium 
+                    <input type="checkbox" name="topTheme2SpeedSlow"> Slow
+                </label>
+                <label>Mobile responsiveness: 
+                    <input type="checkbox" name="topTheme2MobileExcellent"> Excellent 
+                    <input type="checkbox" name="topTheme2MobileGood"> Good 
+                    <input type="checkbox" name="topTheme2MobileFair"> Fair 
+                    <input type="checkbox" name="topTheme2MobilePoor"> Poor
+                </label>
+                <label>Browser compatibility: 
+                    <input type="checkbox" name="topTheme2BrowserExcellent"> Excellent 
+                    <input type="checkbox" name="topTheme2BrowserGood"> Good 
+                    <input type="checkbox" name="topTheme2BrowserFair"> Fair 
+                    <input type="checkbox" name="topTheme2BrowserPoor"> Poor
+                </label>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>FINAL THEME SELECTION</h3>
+            <strong>Selected Theme:</strong>
+            <label>Name: <input type="text" name="selectedThemeName"></label>
+            <label>Platform: <input type="text" name="selectedThemePlatform"></label>
+            <label>Price: <input type="text" name="selectedThemePrice"></label>
+            <label>Purchase/download date: <input type="text" name="selectedThemeDate"></label>
+            <label>Reasoning for Selection: <textarea name="selectionReasoning"></textarea></label>
+        </div>
+
+        <div class="section">
+            <h3>BRAND ELEMENTS FOR CUSTOMIZATION</h3>
+            <strong>Color Palette:</strong>
+            <label>Primary brand color: <input type="text" name="colorPrimary"></label>
+            <label>Secondary color: <input type="text" name="colorSecondary"></label>
+            <label>Accent color: <input type="text" name="colorAccent"></label>
+            <label>Background color: <input type="text" name="colorBackground"></label>
+            <label>Text color: <input type="text" name="colorText"></label>
+
+            <strong>Typography:</strong>
+            <label>Heading font: <input type="text" name="fontHeading"></label>
+            <label>Body font: <input type="text" name="fontBody"></label>
+            <label>Accent font (if applicable): <input type="text" name="fontAccent"></label>
+            <label>Font sizes:</label>
+            <div class="sub-section">
+                <label>H1: <input type="text" name="fontSizeH1"></label>
+                <label>H2: <input type="text" name="fontSizeH2"></label>
+                <label>H3: <input type="text" name="fontSizeH3"></label>
+                <label>Body text: <input type="text" name="fontSizeBody"></label>
+            </div>
+
+            <strong>Visual Elements:</strong>
+            <label>Logo file location: <input type="text" name="logoLocation"></label>
+            <label>Favicon file location: <input type="text" name="faviconLocation"></label>
+            <label>Brand patterns/textures: <input type="text" name="patternsTextures"></label>
+            <label>Image style guidelines: <input type="text" name="imageGuidelines"></label>
+        </div>
+
+        <div class="section">
+            <h3>CUSTOMIZATION PLAN</h3>
+            <strong>Priority Customizations:</strong>
+            <label>1. <input type="text" name="priority1"></label>
+            <label>2. <input type="text" name="priority2"></label>
+            <label>3. <input type="text" name="priority3"></label>
+            <label>4. <input type="text" name="priority4"></label>
+            <label>5. <input type="text" name="priority5"></label>
+
+            <strong>Homepage Layout Plan:</strong>
+            <p>Sketch or describe your planned homepage sections in order:</p>
+            <label>1. <input type="text" name="homepageSection1"></label>
+            <label>2. <input type="text" name="homepageSection2"></label>
+            <label>3. <input type="text" name="homepageSection3"></label>
+            <label>4. <input type="text" name="homepageSection4"></label>
+            <label>5. <input type="text" name="homepageSection5"></label>
+            <label>6. <input type="text" name="homepageSection6"></label>
+
+            <strong>Navigation Structure:</strong>
+            <label>Main menu items:</label>
+            <div class="sub-section">
+                <label>1. <input type="text" name="mainMenu1"></label>
+                <label>2. <input type="text" name="mainMenu2"></label>
+                <label>3. <input type="text" name="mainMenu3"></label>
+                <label>4. <input type="text" name="mainMenu4"></label>
+                <label>5. <input type="text" name="mainMenu5"></label>
+                <label>6. <input type="text" name="mainMenu6"></label>
+            </div>
+            <label>Footer menu items:</label>
+            <div class="sub-section">
+                <label>1. <input type="text" name="footerMenu1"></label>
+                <label>2. <input type="text" name="footerMenu2"></label>
+                <label>3. <input type="text" name="footerMenu3"></label>
+                <label>4. <input type="text" name="footerMenu4"></label>
+            </div>
+
+            <strong>Mobile Considerations:</strong>
+            <p>List any specific mobile customizations needed:</p>
+            <label>1. <input type="text" name="mobileConsideration1"></label>
+            <label>2. <input type="text" name="mobileConsideration2"></label>
+            <label>3. <input type="text" name="mobileConsideration3"></label>
+            <label>4. <input type="text" name="mobileConsideration4"></label>
+        </div>
+
+        <div class="section">
+            <h3>CUSTOMIZATION TRACKING</h3>
+            <strong>Completed Customizations:</strong>
+            <label><input type="checkbox" name="customLogo"> Logo uploaded</label>
+            <label><input type="checkbox" name="customFavicon"> Favicon added</label>
+            <label><input type="checkbox" name="customColors"> Color scheme implemented</label>
+            <label><input type="checkbox" name="customTypography"> Typography customized</label>
+            <label><input type="checkbox" name="customHeader"> Header customized</label>
+            <label><input type="checkbox" name="customFooter"> Footer customized</label>
+            <label><input type="checkbox" name="customHomepage"> Homepage layout configured</label>
+            <label><input type="checkbox" name="customNav"> Navigation menu set up</label>
+            <label><input type="checkbox" name="customButtons"> Button styles customized</label>
+            <label><input type="checkbox" name="customForms"> Form styles customized</label>
+            <label><input type="checkbox" name="customPortfolio"> Portfolio/gallery layout adjusted</label>
+            <label><input type="checkbox" name="customMobile"> Mobile view optimized</label>
+            <label><input type="checkbox" name="customOther1"> Other: <input type="text" name="customOther1Value"></label>
+            <label><input type="checkbox" name="customOther2"> Other: <input type="text" name="customOther2Value"></label>
+
+            <strong>Customization Challenges:</strong>
+            <p>List any challenges encountered and solutions:</p>
+            <label>1. Challenge: <input type="text" name="challenge1"><br>Solution: <input type="text" name="solution1"></label>
+            <label>2. Challenge: <input type="text" name="challenge2"><br>Solution: <input type="text" name="solution2"></label>
+            <label>3. Challenge: <input type="text" name="challenge3"><br>Solution: <input type="text" name="solution3"></label>
+
+            <strong>Future Customizations:</strong>
+            <p>List customizations to implement later:</p>
+            <label>1. <input type="text" name="futureCustomization1"></label>
+            <label>2. <input type="text" name="futureCustomization2"></label>
+            <label>3. <input type="text" name="futureCustomization3"></label>
+            <label>4. <input type="text" name="futureCustomization4"></label>
+        </div>
+
+        <div class="section">
+            <h3>TESTING NOTES</h3>
+            <strong>Desktop Testing:</strong>
+            <label>Chrome: <input type="checkbox" name="desktopChromePassed"> Passed <input type="text" name="desktopChromeIssues" placeholder="Issues"></label>
+            <label>Firefox: <input type="checkbox" name="desktopFirefoxPassed"> Passed <input type="text" name="desktopFirefoxIssues" placeholder="Issues"></label>
+            <label>Safari: <input type="checkbox" name="desktopSafariPassed"> Passed <input type="text" name="desktopSafariIssues" placeholder="Issues"></label>
+            <label>Edge: <input type="checkbox" name="desktopEdgePassed"> Passed <input type="text" name="desktopEdgeIssues" placeholder="Issues"></label>
+
+            <strong>Mobile Testing:</strong>
+            <label>iOS (iPhone): <input type="checkbox" name="mobileIosPassed"> Passed <input type="text" name="mobileIosIssues" placeholder="Issues"></label>
+            <label>Android: <input type="checkbox" name="mobileAndroidPassed"> Passed <input type="text" name="mobileAndroidIssues" placeholder="Issues"></label>
+            <label>Tablet: <input type="checkbox" name="mobileTabletPassed"> Passed <input type="text" name="mobileTabletIssues" placeholder="Issues"></label>
+
+            <strong>Performance Testing:</strong>
+            <label>Page load time: <input type="text" name="performanceLoadTime"></label>
+            <label>Google PageSpeed score: <input type="text" name="performancePageSpeed"></label>
+            <label>Issues identified: <input type="text" name="performanceIssues"></label>
+            <label>Improvements made: <input type="text" name="performanceImprovements"></label>
+        </div>
+
+        <button type="button" onclick="saveWorksheet()">Save As PDF</button>
+    </form>
+
+    <script>
+        const { jsPDF } = window.jspdf;
+        function saveWorksheet() {
+            const doc = new jsPDF();
+            let yOffset = 10;
+
+            // Title
+            doc.setFontSize(16);
+            doc.text("Theme Selection and Customization Worksheet", 10, yOffset);
+            yOffset += 10;
+            doc.setFontSize(12);
+            doc.text("For Creative Entrepreneurs", 10, yOffset);
+            yOffset += 15;
+
+            // Form data
+            const form = document.getElementById("worksheetForm");
+            const inputs = form.querySelectorAll("input, textarea");
+            doc.setFontSize(10);
+
+            inputs.forEach(input => {
+                if (input.type === "checkbox" && input.checked) {
+                    doc.text(`[X] ${input.parentElement.textContent.trim()}`, 10, yOffset);
+                    yOffset += 5;
+                } else if ((input.type === "text" || input.type === "textarea") && input.value) {
+                    doc.text(`${input.previousSibling.textContent.trim()} ${input.value}`, 10, yOffset);
+                    yOffset += 5;
+                }
+            });
+
+            // Save the PDF
+            doc.save("Theme_Selection_Worksheet.pdf");
+        }
+    </script>
+</body>
+</html>
