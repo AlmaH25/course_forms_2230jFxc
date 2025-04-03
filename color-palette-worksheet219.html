@@ -246,83 +246,129 @@
             <!-- STEP 5 -->
             <div class="form-section">
                 <h3>STEP 5: Test Color Combinations</h3>
+
                 <label class="form-label">Primary + Secondary:</label>
                 <input type="text" class="form-control mb-2" name="primarySecondaryAppearance" placeholder="Appearance">
                 <input type="text" class="form-control mb-2" name="primarySecondaryFeelings" placeholder="Feelings evoked">
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primarySecondaryWorks" value="yes"> Yes
+                <div class="checkbox-group">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primarySecondaryYes">
+                        <label class="form-check-label">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primarySecondaryNo">
+                        <label class="form-check-label">No</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primarySecondaryNeedsAdjustment">
+                        <label class="form-check-label">Needs adjustment</label>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primarySecondaryWorks" value="no"> No
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primarySecondaryWorks" value="needsAdjustment"> Needs adjustment
-                </div>
-                
+
                 <label class="form-label mt-3">Primary + Accent 1:</label>
                 <input type="text" class="form-control mb-2" name="primaryAccent1Appearance" placeholder="Appearance">
                 <input type="text" class="form-control mb-2" name="primaryAccent1Feelings" placeholder="Feelings evoked">
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primaryAccent1Works" value="yes"> Yes
+                <div class="checkbox-group">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primaryAccent1Yes">
+                        <label class="form-check-label">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primaryAccent1No">
+                        <label class="form-check-label">No</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primaryAccent1NeedsAdjustment">
+                        <label class="form-check-label">Needs adjustment</label>
+                    </div>
                 </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primaryAccent1Works" value="no"> No
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primaryAccent1Works" value="needsAdjustment"> Needs adjustment
-                </div>
-                
+
                 <label class="form-label mt-3">Secondary + Accent 1:</label>
                 <input type="text" class="form-control mb-2" name="secondaryAccent1Appearance" placeholder="Appearance">
                 <input type="text" class="form-control mb-2" name="secondaryAccent1Feelings" placeholder="Feelings evoked">
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="secondaryAccent1Works" value="yes"> Yes
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="secondaryAccent1Works" value="no"> No
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="secondaryAccent1Works" value="needsAdjustment"> Needs adjustment
+                <div class="checkbox-group">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="secondaryAccent1Yes">
+                        <label class="form-check-label">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="secondaryAccent1No">
+                        <label class="form-check-label">No</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="secondaryAccent1NeedsAdjustment">
+                        <label class="form-check-label">Needs adjustment</label>
+                    </div>
                 </div>
 
                 <label class="form-label mt-3">Primary + Light Neutral:</label>
                 <input type="text" class="form-control mb-2" name="primaryLightNeutralAppearance" placeholder="Appearance">
                 <input type="text" class="form-control mb-2" name="primaryLightNeutralFeelings" placeholder="Feelings evoked">
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primaryLightNeutralWorks" value="yes"> Yes
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primaryLightNeutralWorks" value="no"> No
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primaryLightNeutralWorks" value="needsAdjustment"> Needs adjustment
+                <div class="checkbox-group">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primaryLightNeutralYes">
+                        <label class="form-check-label">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primaryLightNeutralNo">
+                        <label class="form-check-label">No</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primaryLightNeutralNeedsAdjustment">
+                        <label class="form-check-label">Needs adjustment</label>
+                    </div>
                 </div>
 
                 <label class="form-label mt-3">Primary + Dark Neutral:</label>
                 <input type="text" class="form-control mb-2" name="primaryDarkNeutralAppearance" placeholder="Appearance">
                 <input type="text" class="form-control mb-2" name="primaryDarkNeutralFeelings" placeholder="Feelings evoked">
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primaryDarkNeutralWorks" value="yes"> Yes
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primaryDarkNeutralWorks" value="no"> No
-                </div>
-                <div class="form-check form-check-inline">
-                    <input type="radio" class="form-check-input" name="primaryDarkNeutralWorks" value="needsAdjustment"> Needs adjustment
+                <div class="checkbox-group">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primaryDarkNeutralYes">
+                        <label class="form-check-label">Yes</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primaryDarkNeutralNo">
+                        <label class="form-check-label">No</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" name="primaryDarkNeutralNeedsAdjustment">
+                        <label class="form-check-label">Needs adjustment</label>
+                    </div>
                 </div>
 
                 <label class="form-label mt-3">Text Readability Test:</label>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" name="darkTextLightBg"> Dark text on light background: Easy to read
+                    <input type="checkbox" class="form-check-input" name="darkTextLightBgEasy">
+                    <label class="form-check-label">Dark text on light background: Easy to read</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" name="lightTextDarkBg"> Light text on dark background: Easy to read
+                    <input type="checkbox" class="form-check-input" name="darkTextLightBgDifficult">
+                    <label class="form-check-label">Dark text on light background: Difficult to read</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" name="coloredTextNeutralBg"> Colored text on neutral background: Easy to read
+                    <input type="checkbox" class="form-check-input" name="lightTextDarkBgEasy">
+                    <label class="form-check-label">Light text on dark background: Easy to read</label>
                 </div>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" name="neutralTextColoredBg"> Neutral text on colored background: Easy to read
+                    <input type="checkbox" class="form-check-input" name="lightTextDarkBgDifficult">
+                    <label class="form-check-label">Light text on dark background: Difficult to read</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="coloredTextNeutralBgEasy">
+                    <label class="form-check-label">Colored text on neutral background: Easy to read</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="coloredTextNeutralBgDifficult">
+                    <label class="form-check-label">Colored text on neutral background: Difficult to read</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="neutralTextColoredBgEasy">
+                    <label class="form-check-label">Neutral text on colored background: Easy to read</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="neutralTextColoredBgDifficult">
+                    <label class="form-check-label">Neutral text on colored background: Difficult to read</label>
                 </div>
             </div>
 
