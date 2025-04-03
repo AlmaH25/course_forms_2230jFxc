@@ -262,20 +262,16 @@
                  <label class="form-label mt-3">Primary + Accent 1:</label>
                 <input type="text" class="form-control mb-2" name="primaryAccent1Appearance" placeholder="Appearance">
                 <input type="text" class="form-control mb-2" name="primaryAccent1Feelings" placeholder="Feelings evoked">
-                <div class="checkbox-group">
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" name="primaryAccent1Yes">
-                        <label class="form-check-label">Yes</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" name="primaryAccent1No">
-                        <label class="form-check-label">No</label>
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" name="primaryAccent1NeedsAdjustment">
-                        <label class="form-check-label">Needs adjustment</label>
-                    </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="primarySecondaryWorks" value="yes"> Yes
                 </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="primarySecondaryWorks" value="no"> No
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="primarySecondaryWorks" value="needsAdjustment"> Needs adjustment
+                </div>
+            </div>
                 <label class="form-label mt-3">Secondary + Accent 1:</label>
                 <input type="text" class="form-control mb-2" name="secondaryAccent1Appearance" placeholder="Appearance">
                 <input type="text" class="form-control mb-2" name="secondaryAccent1Feelings" placeholder="Feelings evoked">
@@ -288,7 +284,7 @@
                 <div class="form-check form-check-inline">
                     <input type="radio" class="form-check-input" name="secondaryAccent1Works" value="needsAdjustment"> Needs adjustment
                 </div>
-
+            </div>
                 <label class="form-label mt-3">Primary + Light Neutral:</label>
                 <input type="text" class="form-control mb-2" name="primaryLightNeutralAppearance" placeholder="Appearance">
                 <input type="text" class="form-control mb-2" name="primaryLightNeutralFeelings" placeholder="Feelings evoked">
@@ -301,7 +297,7 @@
                 <div class="form-check form-check-inline">
                     <input type="radio" class="form-check-input" name="primaryLightNeutralWorks" value="needsAdjustment"> Needs adjustment
                 </div>
-
+            </div>
                 <label class="form-label mt-3">Primary + Dark Neutral:</label>
                 <input type="text" class="form-control mb-2" name="primaryDarkNeutralAppearance" placeholder="Appearance">
                 <input type="text" class="form-control mb-2" name="primaryDarkNeutralFeelings" placeholder="Feelings evoked">
@@ -314,7 +310,7 @@
                 <div class="form-check form-check-inline">
                     <input type="radio" class="form-check-input" name="primaryDarkNeutralWorks" value="needsAdjustment"> Needs adjustment
                 </div>
-
+            </div>
                 <label class="form-label mt-3">Text Readability Test:</label>
                 <div class="form-check">
                     <input type="checkbox" class="form-check-input" name="darkTextLightBg"> Dark text on light background: Easy to read
