@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Services Financial Tracker</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .tracker {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .tracker h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        input, select {
+            width: 100%;
+            padding: 0.3rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        button {
+            padding: 0.75rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+        }
+        .add-row {
+            background-color: #3498db;
+        }
+        .add-row:hover {
+            background-color: #2980b9;
+        }
+        .save-data {
+            background-color: #27ae60;
+        }
+        .save-data:hover {
+            background-color: #219653;
+        }
+        .export-csv {
+            background-color: #e74c3c;
+        }
+        .export-csv:hover {
+            background-color: #c0392b;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #2c3e50;
+            color: white;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th {
+                display: none;
+            }
+            td {
+                display: flex;
+                justify-content: space-between;
+                padding: 0.5rem;
+            }
+            td:before {
+                content: attr(data-label);
+                font-weight: bold;
+                width: 50%;
+            }
+            .button-group {
+                flex-direction: column;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Digital Services Financial Tracker</h1>
+        <p>Organize your bookkeeping with ease – track revenue, expenses, assets, and liabilities.</p>
+    </header>
+
+    <div class="container">
+        <section class="tracker">
+            <h2>Your Financial Tracker</h2>
+            <p>Use this tool to log your business transactions. Add entries, save them locally, or export as a CSV file for your records.</p>
+            <table id="financial-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th>Amount ($)</th>
+                        <th>Type</th>
+                        <th>Payment Method</th>
+                        <th>Receipt (Y/N)</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Rows will be added dynamically -->
+                </tbody>
+            </table>
+            <div class="button-group">
+                <button class="add-row" onclick="addRow()">Add Entry</button>
+                <button class="save-data" onclick="saveData()">Save Data</button>
+                <button class="export-csv" onclick="exportCSV()">Export as CSV</button>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Created by [Your Name] | Empowering Digital Service Businesses with Smart Bookkeeping</p>
+    </footer>
+
+    <script>
+        // Load saved data on page load
+        document.addEventListener('DOMContentLoaded', loadData);
+
+        function addRow(data = {}) {
+            const tbody = document.getElementById('table-body');
+            const row = tbody.insertRow();
+            row.innerHTML = `
+                <td data-label="Date"><input type="date" name="date" value="${data.date || ''}"></td>
+                <td data-label="Description"><input type="text" name="description" placeholder="e.g., Canva Subscription" value="${data.description || ''}"></td>
+                <td data-label="Category">
+                    <select name="category">
+                        <option value="Revenue" ${data.category === 'Revenue' ? 'selected' : ''}>Revenue / Sales</option>
+                        <option value="Expense" ${data.category === 'Expense' ? 'selected' : ''}>Expense</option>
+                        <option value="Asset" ${data.category === 'Asset' ? 'selected' : ''}>Asset</option>
+                        <option value="Liability" ${data.category === 'Liability' ? 'selected' : ''}>Liability</option>
+                    </select>
+                </td>
+                <td data-label="Amount"><input type="number" name="amount" step="0.01" placeholder="0.00" value="${data.amount || ''}"></td>
+                <td data-label="Type">
+                    <select name="type">
+                        <option value="Income" ${data.type === 'Income' ? 'selected' : ''}>Income</option>
+                        <option value="Expense" ${data.type === 'Expense' ? 'selected' : ''}>Expense</option>
+                    </select>
+                </td>
+                <td data-label="Payment Method">
+                    <select name="payment-method">
+                        <option value="Stripe" ${data.paymentMethod === 'Stripe' ? 'selected' : ''}>Stripe</option>
+                        <option value="PayPal" ${data.paymentMethod === 'PayPal' ? 'selected' : ''}>PayPal</option>
+                        <option value="Debit Card" ${data.paymentMethod === 'Debit Card' ? 'selected' : ''}>Debit Card</option>
+                        <option value="Credit Card" ${data.paymentMethod === 'Credit Card' ? 'selected' : ''}>Credit Card</option>
+                        <option value="Cash" ${data.paymentMethod === 'Cash' ? 'selected' : ''}>Cash</option>
+                    </select>
+                </td>
+                <td data-label="Receipt (Y/N)">
+                    <select name="receipt">
+                        <option value="Yes" ${data.receipt === 'Yes' ? 'selected' : ''}>Yes</option>
+                        <option value="No" ${data.receipt === 'No' ? 'selected' : ''}>No</option>
+                    </select>
+                </td>
+                <td data-label="Notes"><input type="text" name="notes" placeholder="e.g., Monthly tool" value="${data.notes || ''}"></td>
+            `;
+        }
+
+        function saveData() {
+            const tbody = document.getElementById('table-body');
+            const rows = tbody.getElementsByTagName('tr');
+            const data = [];
+
+            for (let row of rows) {
+                const rowData = {
+                    date: row.querySelector('input[name="date"]').value,
+                    description: row.querySelector('input[name="description"]').value,
+                    category: row.querySelector('select[name="category"]').value,
+                    amount: row.querySelector('input[name="amount"]').value,
+                    type: row.querySelector('select[name="type"]').value,
+                    paymentMethod: row.querySelector('select[name="payment-method"]').value,
+                    receipt: row.querySelector('select[name="receipt"]').value,
+                    notes: row.querySelector('input[name="notes"]').value
+                };
+                data.push(rowData);
+            }
+
+            localStorage.setItem('financialData', JSON.stringify(data));
+            alert('Data saved successfully!');
+        }
+
+        function loadData() {
+            const savedData = localStorage.getItem('financialData');
+            if (savedData) {
+                const data = JSON.parse(savedData);
+                data.forEach(rowData => addRow(rowData));
+            } else {
+                // Add one empty row by default
+                addRow();
+            }
+        }
+
+        function exportCSV() {
+            const tbody = document.getElementById('table-body');
+            const rows = tbody.getElementsByTagName('tr');
+            let csvContent = 'Date,Description,Category,Amount,Type,Payment Method,Receipt,Notes\n';
+
+            for (let row of rows) {
+                const rowData = [
+                    row.querySelector('input[name="date"]').value,
+                    `"${row.querySelector('input[name="description"]').value.replace(/"/g, '""')}"`,
+                    row.querySelector('select[name="category"]').value,
+                    row.querySelector('input[name="amount"]').value,
+                    row.querySelector('select[name="type"]').value,
+                    row.querySelector('select[name="payment-method"]').value,
+                    row.querySelector('select[name="receipt"]').value,
+                    `"${row.querySelector('input[name="notes"]').value.replace(/"/g, '""')}"`
+                ];
+                csvContent += rowData.join(',') + '\n';
+            }
+
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'financial-tracker.csv';
+            link.click();
+        }
+    </script>
+</body>
+</html>
